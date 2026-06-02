@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistique & Expédition | ENC TAPE STORE</title>
+    <meta name="description" content="Expertise logistique internationale pour vos commandes d'étiquettes thermiques et rouleaux POS. Options FOB/DDP, délais et emballage industriel.">
+    <link rel="icon" href="https://sc02.alicdn.com/kf/Acabc5a89e455464aa0977f164eaad8151.png" type="image/png">
+    <style>
+        :root {
+            --primary-color: #002D62;
+            --secondary-color: #708090;
+            --accent-color: #00BFFF;
+            --text-color: #333;
+            --light-bg: #f4f4f4;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+        header {
+            background: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+        .lang-switcher {
+            margin-left: 20px;
+            padding: 5px 10px;
+            border: 1px solid var(--secondary-color);
+            border-radius: 4px;
+            background: #fff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .hero-sub {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+        .section {
+            padding: 4rem 5%;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        .logistics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .logistics-card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--accent-color);
+        }
+        .logistics-card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .whatsapp-float svg {
+            width: 35px;
+            height: 35px;
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <img src="https://sc02.alicdn.com/kf/Acabc5a89e455464aa0977f164eaad8151.png" alt="ENC TAPE STORE Logo">
+        ENC TAPE STORE
+    </a>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="index.html#products">Produits</a>
+        <a href="about.html">À Propos</a>
+        <a href="shipping.html" style="color: var(--accent-color);">Expédition</a>
+        <a href="payment.html">Paiement</a>
+        <a href="faq.html">FAQ</a>
+        <select class="lang-switcher" onchange="location = this.value;">
+            <option value="shipping.html" selected>FR</option>
+            <option value="en/shipping.html">EN</option>
+        </select>
+    </nav>
+</header>
+
+<section class="hero-sub">
+    <h1>Expertise Logistique Internationale</h1>
+    <p>Solutions d'expédition fiables et optimisées pour nos partenaires B2B mondiaux.</p>
+</section>
+
+<section class="section">
+    <div class="container">
+        <p>Chez <strong>ENC Tape Store</strong>, nous comprenons que la fiabilité de la chaîne d'approvisionnement est critique pour votre activité B2B. Nous avons optimisé nos processus logistiques pour garantir que vos commandes d'étiquettes et de rouleaux POS arrivent en parfait état, partout dans le monde.</p>
+
+        <h2>Conditions de Livraison (Incoterms)</h2>
+        <p>Nous offrons une flexibilité totale sur les conditions de transport afin de nous adapter à vos processus internes :</p>
+        <div class="logistics-grid">
+            <div class="logistics-card">
+                <h3>FOB (Free On Board)</h3>
+                <p>Idéal si vous disposez de votre propre transitaire. Nous gérons le transport jusqu'au port de départ et les formalités d'exportation.</p>
+            </div>
+            <div class="logistics-card">
+                <h3>DDP (Delivered Duty Paid)</h3>
+                <p>La solution "clés en main". Nous prenons en charge l'intégralité du transport, les douanes et les taxes jusqu'à votre entrepôt. Aucun frais caché.</p>
+            </div>
+        </div>
+
+        <h2>Délais de Livraison Moyens</h2>
+        <ul>
+            <li><strong>Production :</strong> 7 à 14 jours ouvrables selon le volume et la personnalisation.</li>
+            <li><strong>Transport Maritime :</strong> 20 à 35 jours (solution la plus économique pour les gros volumes).</li>
+            <li><strong>Transport Aérien / Express :</strong> 5 à 10 jours (pour les besoins urgents).</li>
+        </ul>
+
+        <h2>Emballage Industriel et Protection</h2>
+        <p>La qualité de nos produits thermiques dépend de leur stockage. C'est pourquoi nous appliquons des standards d'emballage rigoureux :</p>
+        <ul>
+            <li><strong>Protection Thermique et Humidité :</strong> Chaque rouleau ou pile d'étiquettes est scellé sous film rétractable pour éviter toute dégradation.</li>
+            <li><strong>Conditionnement en Gros :</strong> Utilisation de cartons renforcés double cannelure, palettisés et filmés pour une stabilité maximale.</li>
+            <li><strong>Étiquetage Logistique :</strong> Identification claire de chaque palette avec numéros de lots et spécifications techniques.</li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 ENC TAPE STORE. Tous droits réservés. | Partenaire Global en Solutions Thermiques.</p>
+</footer>
+
+<a href="https://wa.me/919811166364" class="whatsapp-float" target="_blank">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.737 5.48 2.025 7.787l-2.025 7.387 7.563-1.987c2.247 1.213 4.812 1.913 7.537 1.913 8.837 0 16-7.163 16-16s-7.163-16-16-16zm9.35 22.012c-.387 1.088-1.925 1.987-2.675 2.113-.675.113-1.55.2-4.525-.913-3.8-1.425-6.237-5.325-6.425-5.575-.188-.25-1.537-2.05-1.537-3.913s.963-2.775 1.3-3.138c.338-.363.738-.45.988-.45s.5 0 .713.013c.225.013.525-.088.825.638.3.725 1.025 2.5 1.113 2.687.088.188.15.413.025.663s-.188.388-.375.6c-.188.213-.4.475-.575.638-.2.188-.413.4-.175.813.238.413 1.063 1.75 2.275 2.825 1.563 1.388 2.875 1.825 3.288 2.038.413.213.65.175.888-.1.238-.275 1.025-1.188 1.3-1.6.275-.413.55-.338.925-.2s2.388 1.125 2.8 1.325c.413.213.688.313.788.488.1.175.1 1.013-.287 2.1z"/></svg>
+</a>
+
+</body>
+</html>
