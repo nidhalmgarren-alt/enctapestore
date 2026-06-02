@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement Sécurisé - ENC TAPE STORE</title>
+    <meta name="description" content="Effectuez vos paiements sécurisés via USDT (Crypto) ou Carte Bancaire (Visa/Mastercard) sur ENC TAPE STORE.">
+    <meta property="og:title" content="Paiement Sécurisé - ENC TAPE STORE">
+    <meta property="og:image" content="https://sc02.alicdn.com/kf/Acabc5a89e455464aa0977f164eaad8151.png">
+    <link rel="icon" href="https://sc02.alicdn.com/kf/Acabc5a89e455464aa0977f164eaad8151.png" type="image/png">
+    <style>
+        :root {
+            --primary-color: #002D62; /* Navy Blue */
+            --secondary-color: #708090; /* Slate Grey */
+            --accent-color: #00BFFF; /* Deep Sky Blue */
+            --text-color: #333;
+            --light-bg: #f4f4f4;
+            --white: #ffffff;
+            --border-color: #ddd;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+        header {
+            background: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+        .container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .payment-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .method-card {
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 6px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .method-card.featured {
+            border: 2px solid var(--accent-color);
+            background-color: #f0faff;
+            grid-column: 1 / -1; /* Take full width */
+            padding: 2.5rem;
+        }
+        .method-card.featured h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .method-card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        .address-box {
+            background: #f9f9f9;
+            padding: 0.8rem;
+            font-family: monospace;
+            font-size: 0.9rem;
+            border: 1px dashed #ccc;
+            margin: 1rem 0;
+            word-break: break-all;
+        }
+        .networks {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: #eef4f9;
+            border-left: 4px solid var(--accent-color);
+        }
+        .form-section {
+            background: #fff;
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .submit-btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        .submit-btn:hover {
+            background: #003d85;
+        }
+        footer {
+            background: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: #FFF;
+        }
+        .whatsapp-float svg {
+            width: 35px;
+            height: 35px;
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <img src="https://sc02.alicdn.com/kf/Acabc5a89e455464aa0977f164eaad8151.png" alt="ENC TAPE STORE Logo">
+        ENC TAPE STORE
+    </a>
+    <nav>
+        <a href="index.html#home">Accueil</a>
+        <a href="index.html#products">Produits</a>
+        <a href="about.html">À Propos</a>
+        <a href="affiliates.html">Affiliates</a>
+        <a href="payment.html">Paiement</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Système de Paiement Sécurisé</h1>
+    
+    <div class="networks">
+        <strong>Réseaux Supportés :</strong> TRC20 (Recommandé), ERC20, BEP20.
+    </div>
+
+    <div class="payment-methods">
+        <div class="method-card featured">
+            <h3>Binance Pay / USDT (TRC20)</h3>
+            <p>Utilisez l'adresse ci-dessous pour vos transferts USDT via Binance ou tout autre portefeuille compatible TRC20.</p>
+            <div class="address-box">TSxzECR4nYwUzZ5AaVJCAutDc4nXfjVVxf</div>
+            <p><small>Note : Assurez-vous d'utiliser le réseau <strong>Tron (TRC20)</strong> pour éviter toute perte de fonds.</small></p>
+        </div>
+
+        <div class="method-card">
+            <h3>Carte Bancaire / Visa / Mastercard</h3>
+            <p>Paiement sécurisé via Stripe. Idéal pour les commandes d'échantillons et les petites commandes B2B.</p>
+            <div class="card-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Visa_2021.svg" alt="Visa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+            </div>
+            <a href="https://buy.stripe.com/PLACEHOLDER_KEY" class="stripe-btn">Payer avec Carte Visa</a>
+            <p><small>Transactions sécurisées SSL par Stripe.</small></p>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <h2>Confirmation de Transaction</h2>
+        <p>Après avoir effectué votre virement, merci de remplir ce formulaire pour validation.</p>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="order_number">Numéro de Commande</label>
+                <input type="text" id="order_number" name="order_number" placeholder="Ex: ENC-12345" required>
+            </div>
+            <div class="form-group">
+                <label for="transaction_hash">Hash de Transaction (TXID)</label>
+                <input type="text" id="transaction_hash" name="transaction_hash" placeholder="Collez le hash de votre transaction ici" required>
+            </div>
+            <button type="submit" class="submit-btn">Soumettre pour Vérification</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 ENC TAPE STORE. Tous droits réservés. | Partenaire Global en Solutions Thermiques.</p>
+</footer>
+
+<a href="https://wa.me/919811166364" class="whatsapp-float" target="_blank">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.737 5.48 2.025 7.787l-2.025 7.387 7.563-1.987c2.247 1.213 4.812 1.913 7.537 1.913 8.837 0 16-7.163 16-16s-7.163-16-16-16zm9.35 22.012c-.387 1.088-1.925 1.987-2.675 2.113-.675.113-1.55.2-4.525-.913-3.8-1.425-6.237-5.325-6.425-5.575-.188-.25-1.537-2.05-1.537-3.913s.963-2.775 1.3-3.138c.338-.363.738-.45.988-.45s.5 0 .713.013c.225.013.525-.088.825.638.3.725 1.025 2.5 1.113 2.687.088.188.15.413.025.663s-.188.388-.375.6c-.188.213-.4.475-.575.638-.2.188-.413.4-.175.813.238.413 1.063 1.75 2.275 2.825 1.563 1.388 2.875 1.825 3.288 2.038.413.213.65.175.888-.1.238-.275 1.025-1.188 1.3-1.6.275-.413.55-.338.925-.2s2.388 1.125 2.8 1.325c.413.213.688.313.788.488.1.175.1 1.013-.287 2.1z"/></svg>
+</a>
+
+</body>
+</html>

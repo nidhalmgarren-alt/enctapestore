@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENC TAPE STORE | Global Thermal Paper & Label Supplier</title>
+    <title>ENC TAPE STORE | Fournisseur Mondial de Papier Thermique et Étiquettes</title>
+    <!-- SEO & Social Media -->
+    <meta name="description" content="Étiquettes thermiques directes de qualité supérieure, rouleaux de reçus POS et papier d'enregistrement médical. Fournisseur B2B crypto-friendly.">
+    <meta name="keywords" content="étiquettes thermiques, étiquettes 4x6, papier POS, papier médical, fournisseur étiquettes expédition, ENC TAPE STORE">
+    <meta property="og:title" content="ENC TAPE STORE | Fournisseur Mondial de Papier Thermique et Étiquettes">
+    <meta property="og:description" content="Solutions de papier thermique direct d'usine. Étiquettes d'expédition, rouleaux POS et papier médical.">
+    <meta property="og:image" content="https://sc02.alicdn.com/kf/A90d891b09d0641dabe0410d5b7ea3d660.png">
+    <meta property="og:url" content="https://enctapestore.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="https://sc02.alicdn.com/kf/Acabc5a89e455464aa0977f164eaad8151.png" type="image/png">
     <style>
         :root {
             --primary-color: #002D62; /* Navy Blue */
@@ -35,6 +44,7 @@
             font-weight: bold;
             font-size: 1.5rem;
             color: var(--primary-color);
+            text-decoration: none;
         }
         .logo img {
             height: 50px;
@@ -89,7 +99,7 @@
         }
         .products {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
         }
         .product-card {
@@ -97,10 +107,8 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        .product-card:hover {
-            transform: translateY(-10px);
+            display: flex;
+            flex-direction: column;
         }
         .product-card img {
             width: 100%;
@@ -109,10 +117,22 @@
         }
         .product-info {
             padding: 1.5rem;
+            flex-grow: 1;
         }
         .product-info h3 {
             margin-top: 0;
             color: var(--primary-color);
+        }
+        .specs {
+            background: #f9f9f9;
+            padding: 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        .specs ul {
+            padding-left: 1.2rem;
+            margin: 0.5rem 0;
         }
         .contact {
             background: var(--light-bg);
@@ -128,93 +148,155 @@
             text-align: center;
             padding: 2rem;
         }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: #FFF;
+        }
+        .whatsapp-float svg {
+            width: 35px;
+            height: 35px;
+            fill: currentColor;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="logo">
+    <a href="index.html" class="logo">
         <img src="https://sc02.alicdn.com/kf/Acabc5a89e455464aa0977f164eaad8151.png" alt="ENC TAPE STORE Logo">
         ENC TAPE STORE
-    </div>
+    </a>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
+        <a href="#home">Accueil</a>
+        <a href="#products">Produits</a>
+        <a href="about.html">À Propos</a>
+        <a href="affiliates.html">Affiliates</a>
+        <a href="payment.html">Paiement</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <section id="home" class="hero">
-    <h1>Your Global Partner in Thermal Paper Solutions</h1>
-    <p>Premium Quality Direct Thermal Shipping Labels, POS Receipt Rolls, and Medical Recording Paper for International Markets.</p>
-    <a href="mailto:admin@enctapestore.com" class="cta-button">Request a Quote</a>
+    <h1>Votre Partenaire Global en Solutions de Papier Thermique</h1>
+    <p>Étiquettes d'expédition thermiques directes, rouleaux de reçus POS et papier d'enregistrement médical de qualité supérieure.</p>
+    <a href="https://wa.me/919811166364" class="cta-button">Demander un Devis</a>
 </section>
 
 <section id="products" class="section">
-    <h2 class="section-title">Our Featured Products</h2>
+    <h2 class="section-title">Notre Catalogue de Produits B2B</h2>
     <div class="products">
+        <!-- Shipping Labels -->
         <div class="product-card">
-            <img src="https://sc02.alicdn.com/kf/A90d891b09d0641dabe0410d5b7ea3d660.png" alt="Thermal Shipping Labels">
+            <img src="https://sc02.alicdn.com/kf/A90d891b09d0641dabe0410d5b7ea3d660.png" alt="Thermal Shipping Labels" loading="lazy">
             <div class="product-info">
-                <h3>Thermal Shipping Labels (4x6)</h3>
-                <p>BPA-Free, high-adhesive rolls compatible with all major thermal printers. Ideal for global e-commerce and logistics.</p>
+                <h3>Étiquettes d'expédition (4" x 6")</h3>
+                <p>La solution standard pour la logistique e-commerce. Revêtement résistant aux intempéries.</p>
+                <div class="specs">
+                    <strong>Spécifications :</strong>
+                    <ul>
+                        <li>Dimensions : 101.6mm x 152.4mm</li>
+                        <li>Quantité : 350 étiquettes / rouleau</li>
+                        <li>Adhésif : Acrylique permanent "Instant-Bond"</li>
+                        <li>Sécurité : Garanti sans BPA et sans BPS</li>
+                    </ul>
+                    <strong>Arguments B2B :</strong>
+                    <p>Compatibilité universelle (Zebra, Rollo, MUNBYN). Codes-barres lisibles garantis durant le transit.</p>
+                </div>
             </div>
         </div>
+        
+        <!-- POS Rolls -->
         <div class="product-card">
-            <img src="https://sc02.alicdn.com/kf/A9f3186f96e184a80902f9b7d090701d5k.png" alt="POS Receipt Paper">
+            <img src="https://sc02.alicdn.com/kf/A9f3186f96e184a80902f9b7d090701d5k.png" alt="POS Receipt Paper" loading="lazy">
             <div class="product-info">
-                <h3>80mm POS Receipt Paper</h3>
-                <p>High-sensitivity thermal rolls for cash registers. Clear, crisp printing for retail and hospitality industries worldwide.</p>
+                <h3>Rouleaux de caisse POS (80x80mm)</h3>
+                <p>Le standard d'or pour le commerce de détail et l'hôtellerie. Impression nette et durable.</p>
+                <div class="specs">
+                    <strong>Spécifications :</strong>
+                    <ul>
+                        <li>Taille : 80mm x 80mm (Longueur ~80m)</li>
+                        <li>Grammage : Papier premium 65g/m²</li>
+                        <li>Mandrin : Standard 12mm</li>
+                        <li>Sécurité : 100% sans BPA</li>
+                    </ul>
+                    <strong>Arguments B2B :</strong>
+                    <p>Protection du matériel (faible résidu). Archivage longue durée conforme aux exigences comptables.</p>
+                </div>
             </div>
         </div>
+        
+        <!-- Medical Paper -->
         <div class="product-card">
-            <img src="https://sc02.alicdn.com/kf/A5c912d6db726413eb4735e3633dd0e97p.png" alt="Medical Recording Paper">
+            <img src="https://sc02.alicdn.com/kf/A5c912d6db726413eb4735e3633dd0e97p.png" alt="Medical Recording Paper" loading="lazy">
             <div class="product-info">
-                <h3>Medical Recording Paper</h3>
-                <p>Specialized high-contrast recording paper for ultrasound and ECG machines. Precision performance for clinical environments.</p>
+                <h3>Papier Thermique Médical</h3>
+                <p>Précision diagnostique pour le secteur de la santé (Échographie, ECG/EKG).</p>
+                <div class="specs">
+                    <strong>Spécifications :</strong>
+                    <ul>
+                        <li>Types : High-Gloss (Ultrasound) / Haute Densité (ECG)</li>
+                        <li>Dimensions : 110mm x 20m</li>
+                        <li>Rendu : 256 niveaux de gris</li>
+                        <li>Conformité : Normes ISO 13485</li>
+                    </ul>
+                    <strong>Arguments B2B :</strong>
+                    <p>Compatibilité OEM (Sony/Mitsubishi). Archivage certifié 10 ans sans décoloration.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <section id="crypto" class="section crypto-section">
-    <h2 class="section-title">Wholesale Crypto Orders</h2>
-    <p>We are a crypto-friendly supplier. Secure your bulk orders using USDT, BTC, or ETH for faster processing and lower fees.</p>
+    <h2 class="section-title">Commandes de Gros en Crypto</h2>
+    <p style="text-align: center;">Nous sommes un fournisseur crypto-friendly. Réglez vos commandes en gros via USDT, BTC ou ETH pour un traitement rapide.</p>
     
-    <div class="crypto-grid" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-        <div class="crypto-card" style="background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; text-align: center; margin-bottom: 1rem;">
-            <span class="crypto-icon" style="font-size: 2rem;">💳</span>
-            <h3>Binance Pay</h3>
-            <p>Pay instantly with your Binance App. Zero gas fees for USDT transfers.</p>
-            <a href="mailto:admin@enctapestore.com?subject=Binance%20Pay%20Inquiry" class="cta-button" style="background: #F3BA2F; color: #000;">Request Pay ID</a>
-        </div>
-        
-        <div class="crypto-card" style="background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 300px; text-align: center; margin-bottom: 1rem;">
-            <span class="crypto-icon" style="font-size: 2rem;">🛡️</span>
-            <h3>BitPay</h3>
-            <p>Professional crypto payment processing for secure B2B transactions.</p>
-            <a href="mailto:admin@enctapestore.com?subject=BitPay%20Inquiry" class="cta-button" style="background: #1A2B44;">Request Invoice</a>
-        </div>
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="payment.html" class="cta-button">Accéder au Portail de Paiement</a>
     </div>
     
     <div style="margin-top: 3rem; text-align: center;">
-        <p><strong>Supported Assets:</strong> USDT (TRC20/ERC20), BTC, ETH, USDC</p>
-        <p><small>*Contact us for wallet addresses or direct payment links.</small></p>
+        <p><strong>Plateformes supportées :</strong> Binance, Bybit, RedotPay</p>
+        <p><strong>Actifs supportés :</strong> USDT (TRC20/ERC20), BTC, ETH</p>
     </div>
 </section>
 
 <section id="contact" class="section contact">
-    <h2 class="section-title">Global Wholesale & Inquiries</h2>
-    <p>Contact us today for bulk pricing and international shipping rates. We specialize in cross-border trade and logistics.</p>
+    <h2 class="section-title">Grossiste Global & Demandes</h2>
+    <p>Contactez-nous aujourd'hui pour les prix de gros et les tarifs d'expédition internationaux.</p>
     <div class="contact-info">
-        <strong>Email:</strong> <a href="mailto:admin@enctapestore.com">admin@enctapestore.com</a><br>
-        <strong>Website:</strong> <a href="http://enctapestore.com">enctapestore.com</a>
+        <strong>WhatsApp :</strong> <a href="https://wa.me/919811166364">+91 98111 66364</a><br>
+        <strong>Email :</strong> <a href="mailto:admin@enctapestore.com">admin@enctapestore.com</a><br>
+        <strong>Site Web :</strong> <a href="http://enctapestore.com">enctapestore.com</a>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 ENC TAPE STORE. All Rights Reserved. | Dedicated to Global Excellence.</p>
+    <p>&copy; 2026 ENC TAPE STORE. Tous droits réservés. | Partenaire Global en Solutions Thermiques.</p>
 </footer>
+
+<a href="https://wa.me/919811166364" class="whatsapp-float" target="_blank">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.737 5.48 2.025 7.787l-2.025 7.387 7.563-1.987c2.247 1.213 4.812 1.913 7.537 1.913 8.837 0 16-7.163 16-16s-7.163-16-16-16zm9.35 22.012c-.387 1.088-1.925 1.987-2.675 2.113-.675.113-1.55.2-4.525-.913-3.8-1.425-6.237-5.325-6.425-5.575-.188-.25-1.537-2.05-1.537-3.913s.963-2.775 1.3-3.138c.338-.363.738-.45.988-.45s.5 0 .713.013c.225.013.525-.088.825.638.3.725 1.025 2.5 1.113 2.687.088.188.15.413.025.663s-.188.388-.375.6c-.188.213-.4.475-.575.638-.2.188-.413.4-.175.813.238.413 1.063 1.75 2.275 2.825 1.563 1.388 2.875 1.825 3.288 2.038.413.213.65.175.888-.1.238-.275 1.025-1.188 1.3-1.6.275-.413.55-.338.925-.2s2.388 1.125 2.8 1.325c.413.213.688.313.788.488.1.175.1 1.013-.287 2.1z"/></svg>
+</a>
 
 </body>
 </html>
